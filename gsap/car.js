@@ -34,8 +34,7 @@ class Car {
 			// effect.paused(!effect.paused)
 			this._clearTimer(timer)
 			timer = setTimeout(() => {
-				console.log(effect.paused)
-				effect.paused(!effect.paused)
+				effect.paused(!effect.paused())
 			}, 200)
 
 		})
